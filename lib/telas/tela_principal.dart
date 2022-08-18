@@ -149,13 +149,11 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                                 children: [
                                   BotaoArredondado(
                                     icone: FontAwesomeIcons.minus,
-                                    aoPressionar: peso < 5
-                                        ? null
-                                        : () {
-                                            setState(() {
-                                              peso--;
-                                            });
-                                          },
+                                    aoPressionar: () {
+                                      setState(() {
+                                        peso < 21 ? null : peso--;
+                                      });
+                                    },
                                   ),
                                   const SizedBox(
                                     width: 10,
@@ -198,7 +196,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                                     icone: FontAwesomeIcons.minus,
                                     aoPressionar: () {
                                       setState(() {
-                                        idade--;
+                                        idade < 16 ? null : idade--;
                                       });
                                     },
                                   ),

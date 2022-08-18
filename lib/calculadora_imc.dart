@@ -33,15 +33,15 @@ class CalculadoraIMC {
 
   String obterInterpretacao() {
     if (_imc < 18.5) {
-      return 'Você esta muito abaixo do seu peso ideal, deve se alimentar mais e melhor';
+      return 'Você esta muito abaixo do seu peso ideal, deve se alimentar mais e melhor.';
     } else if (_imc > 18.5 && _imc < 24.9) {
-      return 'Excelente!! Seu peso esta dentro da normalidade';
+      return 'Excelente!! Seu peso esta dentro da normalidade.';
     } else if (_imc > 25 && _imc < 29.9) {
-      return 'Você esta com sobre-peso, atenção, já deve procurar corrigir a alimentação ';
+      return 'Você esta com sobre-peso, atenção!!, já deve procurar corrigir a alimentação.';
     } else if (_imc > 30 && _imc < 34.9) {
-      return 'Cuidado!! você esta com Obesidade grau 1, deve reduzir, mudar e melhorar sua alimentação  ';
+      return 'Cuidado!! você esta com Obesidade grau 1, deve reduzir, mudar e melhorar sua alimentação.';
     } else if (_imc > 35 && _imc < 39.9) {
-      return 'Preoupante!! voce esta com Obesidade grau 2, deve reduzir, mudar e melhoar a alimentação e se necessario procurar por auxilio especializado';
+      return 'Preocupante!! voce esta com Obesidade grau 2, deve reduzir, mudar e melhoar a alimentação e se necessario procurar por auxilio especializado.';
     } else {
       return 'Grave!!! você esta com Obesidade grau 3, deve procurar por ajuda especializada, a necessidade de redução de peso é urgente.';
     }

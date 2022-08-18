@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'telas/tela_principal.dart';
+import 'package:flutter/services.dart';
 
-void main() => runApp(const CalculadoraIMC());
+void main() {
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  runApp(const CalculadoraIMC());
+}
 
 class CalculadoraIMC extends StatelessWidget {
   const CalculadoraIMC({Key? key}) : super(key: key);
