@@ -149,11 +149,13 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                                 children: [
                                   BotaoArredondado(
                                     icone: FontAwesomeIcons.minus,
-                                    aoPressionar: () {
-                                      setState(() {
-                                        peso--;
-                                      });
-                                    },
+                                    aoPressionar: peso < 5
+                                        ? null
+                                        : () {
+                                            setState(() {
+                                              peso--;
+                                            });
+                                          },
                                   ),
                                   const SizedBox(
                                     width: 10,

@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 class CartaoPadrao extends StatelessWidget {
   final Color cor;
   final Widget? filhoCartao;
-  final Function()? aoPressionar;
+  final Function()?
+      aoPressionar; // O ? é necessário pois no contrutor o Function não receve o required
 
   // ignore: use_key_in_widget_constructors
   const CartaoPadrao({required this.cor, this.filhoCartao, this.aoPressionar});
@@ -24,5 +25,3 @@ class CartaoPadrao extends StatelessWidget {
     );
   }
 }
-/* Ao criar um tipo Function "final Function aoPressionar;"  ao passar a função, voltava o erro -The argument type 'Function' can't be assigned to the parameter type 'void Function()?' utilizei no lugar do Function o tipo VoidCallback
-*/

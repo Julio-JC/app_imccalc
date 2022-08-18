@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// É uma convensão que todas as descrições das const inicia-se com o "k"
 const double kAlturaContainerInferior = 80.0;
 const Color kCorAtivaCartaoPadrao = Color(0xFF9E9E9E);
 const Color kCorInativaCartaoPadrao = Color(0xFF7E7E7E);
