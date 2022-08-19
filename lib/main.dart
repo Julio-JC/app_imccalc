@@ -3,7 +3,6 @@ import 'telas/tela_principal.dart';
 import 'package:flutter/services.dart';
 
 void main() {
-  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   runApp(const CalculadoraIMC());
 }
 
@@ -12,7 +11,9 @@ class CalculadoraIMC extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         appBarTheme: const AppBarTheme(
           color: Color(0xFF616161),
