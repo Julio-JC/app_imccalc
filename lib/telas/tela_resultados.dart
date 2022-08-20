@@ -1,3 +1,4 @@
+import 'package:app_imccalc/telas/tela_tabela_imc.dart';
 import 'package:flutter/material.dart';
 import '../componentes/botao_inferior.dart';
 import '../componentes/cartao_padrao.dart';
@@ -31,9 +32,32 @@ class TelaResultados extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.all(15.0),
               alignment: Alignment.bottomLeft,
-              child: const Text(
-                'Resultado',
-                style: kTituloTextStyle,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Resultado',
+                    style: kTituloTextStyle,
+                  ),
+                  ElevatedButton(
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(
+                        Color(0xFFFF5822),
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return TelaTabelaImc();
+                          },
+                        ),
+                      );
+                    },
+                    child: Text('Tabela IMC'),
+                  ),
+                ],
               ),
             ),
           ),

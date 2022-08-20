@@ -21,6 +21,11 @@ const TextStyle kBotaoGrandeTextStyle = TextStyle(
   fontWeight: FontWeight.bold,
 );
 
+const TextStyle kTituloTabelaTextStyle = TextStyle(
+  fontSize: 20.0,
+  fontWeight: FontWeight.bold,
+);
+
 const kTituloTextStyle = TextStyle(
   fontSize: 50.0,
   fontWeight: FontWeight.bold,
@@ -40,5 +45,11 @@ const kIMCTextStyle = TextStyle(
 
 const kCopoTextStyle = TextStyle(
   fontSize: 22.0,
+  color: Colors.black,
+);
+
+const kTabelaTextIMC = TextStyle(
+  fontSize: 20,
+  fontWeight: FontWeight.bold,
   color: Colors.black,
 );
