@@ -1,5 +1,5 @@
+import 'package:app_imccalc/telas/tela_principal.dart';
 import 'package:flutter/material.dart';
-import 'telas/tela_principal.dart';
 import 'package:flutter/services.dart';
 
 void main() {

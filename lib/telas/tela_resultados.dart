@@ -35,14 +35,14 @@ class TelaResultados extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     'Resultado',
                     style: kTituloTextStyle,
                   ),
                   ElevatedButton(
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(
-                        Color(0xFFFF5822),
+                        const Color(0xFFFF5822),
                       ),
                     ),
                     onPressed: () {
@@ -55,7 +55,7 @@ class TelaResultados extends StatelessWidget {
                         ),
                       );
                     },
-                    child: Text('Tabela IMC'),
+                    child: const Text('Tabela IMC'),
                   ),
                 ],
               ),

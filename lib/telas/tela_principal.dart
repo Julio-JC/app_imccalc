@@ -1,14 +1,11 @@
 import 'package:app_imccalc/telas/tela_resultados.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
 import '../componentes/botao_arredondado.dart';
 import '../componentes/botao_inferior.dart';
 import '../componentes/cartao_padrao.dart';
 import '../componentes/conteudo_cartao.dart';
-
 import '../constantes.dart';
-import 'tela_resultados.dart';
 import 'package:app_imccalc/calculadora_imc.dart';
 
 enum QualSexo {

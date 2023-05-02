@@ -4,7 +4,7 @@ class CartaoPadrao extends StatelessWidget {
   final Color cor;
   final Widget? filhoCartao;
   final Function()?
-      aoPressionar; // O ? é necessário pois no contrutor o Function não receve o required
+      aoPressionar; // O ? é necessário pois no contrutor o Function não recebe o required
 
   // ignore: use_key_in_widget_constructors
   const CartaoPadrao({required this.cor, this.filhoCartao, this.aoPressionar});
